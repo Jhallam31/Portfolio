@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!--FontAwesome Icons-->
+    <script src="https://kit.fontawesome.com/5f8951e26e.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400&family=Dosis&family=Inconsolata:wght@600&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <!--Main css-->
+    <link rel="stylesheet" href="Main.css">
+
+
+
+    <title>Jenna Hallam</title>
+</head>
+
+<body>
+
+    <header id="page-hero" class="site-header">
+        <!--Nav-->
+        <nav class="site-nav navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="padding-top: 0%;">
+            <div class="container-fluid">
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <section class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav text-right">
+                        <a class="nav-item nav-link" href="#page-hero">Home</a>
+                        <a class="nav-item nav-link" href="#skills-buttons">Skills</a>
+                        <a class="nav-item nav-link" href="#projects-grid">Projects</a>
+                        <a class="nav-item nav-link" href="#about-me">About</a>
+                        <a class="nav-item nav-link" href="#connect">Connect</a>
+                    </div>
+                </section>
+
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid text-center align-middle"
+            style="background-image: url(Resources/HeaderBackground.jpg); background-size: cover; margin-top: 25px; Height: 30%; position: relative;"
+            id="page-hero">
+            <h2 style="font-size:5vw;font-weight: lighter;" class="text-light">Jenna Hallam</h2>
+            <footer class="blockquote-footer text-dark" style="font-size: 3vw;">Junior Developer</footer>
+
+        </div>
+
+    </header>
+
+    <!--Contact Me Modal-->
+    <div class="modal fade" id="connectModal" tabindex="-1" role="dialog" aria-labelledby="connectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #3b403e; color: #d4d9d7; text-shadow: lightgray, 1px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="connectModalLabel">Contact Jenna</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form action="https://formspree.io/mvowzdyj" method="POST">
+
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col">
+                                    <input type="text" class="form-control text-dark" id="name" placeholder="Name"
+                                        name="name" style="background-color: #CECECE;">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control text-dark" placeholder="Your Email"
+                                        name="_replyTo" style="background-color: #CECECE;">
+                                </div>
+                            </div>
+                            <div class="row" style="height: 200px; margin-top: 10px;">
+                                <div class="col">
+                                    <input type="text-area" class="form-control text-dark h-100"
+                                        placeholder="Your Message" name="message" style="background-color: #CECECE;">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" style="background-color: hsl(159, 32%, 9%);"
+                        data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Welcome Section-->
+    <div class="container-fluid text-center align-middle">
+        <div style="padding-top:15%;">
+            <p class="lead text-center word-wrap"><b style="font-size:1.5rem;">Welcome.</b> If you're looking for a
+                full-stack Developer with experience working with RESTful APIs, you're in the right place. Check out my
+                work below and feel free to contact me when you're done.</p>
+        </div>
+    </div>
+
+    <!--Skills Section-->
+
+    <section class="w-100" id="skills-buttons" style="padding-top: 10%;">
+        <div class="container">
+            <div class="row" id="skillsTitleRow">
+                <div class="col-sm">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="row" id="skillsRow1">
+                <div class="col-md-3">
+                    <button type="button" class="btn  shadow p-3" href="#technicalSkillsModal" id="skillButtons"
+                        data-toggle="modal" data-target="#technicalSkillsModal" style="width:200px;"> Technical
+                        Skills</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn  shadow p-3 " href="#softSkillsModal" id="skillButtons"
+                        data-toggle="modal" data-target="#softSkillsModal" style="width:200px;">Soft Skills</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn  shadow p-3 " href="#valuesModal" id="skillButtons"
+                        data-toggle="modal" data-target="#valuesModal" style="width:200px;">Values</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn  shadow p-3 " href="#upNextModal" id="skillButtons"
+                        data-toggle="modal" data-target="#upNextModal" style="width:200px;">Up Next...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Projects-->
+    <div class="container" id="projects-grid" style="padding-bottom: 80px;">
+        <div class="row">
+            <div class="col-sm-12 text-center border-bottom" style="margin-bottom: 100px;">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <!-- Projects Row 1 -->
+        <div class="row">
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/BlueBadgeThumbnail.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">An n-tier WebAPI built with a team using C# Entity Framework.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center">PokeTrack API</h4>
+                    <a href="https://github.com/CTJinks/BlueBadgeProject" target=”_blank” class="btn btn-secondary">View
+                        Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/CSSCreature2.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">An animated creature created using CSS styles and borders</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center" stylr="font-size: 1vw">CSS Creature 2</h4>
+                    <a href="https://codepen.io/jhallam31/pen/OJyYWaZ" target=”_blank” class="btn btn-secondary">View
+                        Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/GoldBadgeThumbnail.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">C# Repository Pattern Challenges</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center">Business Console Apps</h4>
+                    <a href="https://github.com/Jhallam31/Gold-badge-challenges" target=”_blank”
+                        class="btn btn-secondary">View Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <!-- End Projects Row 1 -->
+        <br>
+        <br>
+        <!-- Projects Row 2 -->
+        <div class="row">
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/StaticStoreFrontThumbnail.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">A static store landing page styled with Html/CSS</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center">Store Front Page</h4>
+                    <a href="https://github.com/Jhallam31/Static-storefront" target=”_blank”
+                        class="btn btn-secondary">View Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/RegisterPageThumbnail.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">A simple registration page styled with html/CSS </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center"> Static Register Page</h4>
+                    <a href="https://github.com/Jhallam31/registerpage" target=”_blank” class="btn btn-secondary">View
+                        Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="col-12 col-md-4">
+                <!-- Card image -->
+                <div class="card">
+                    <div class="container" id="cardContainer">
+
+                        <img class="card-img-top" src="Resources/ComingSoonThumbnail.jpg" alt="Card image cap">
+                        <div id="overlay">
+                            <div id="text">A Web API with a fully functional front end, coming soon!</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card content -->
+                <div class="card-body text-center">
+                    <!-- Title -->
+                    <h4 class="card-title text-center">Red Badge Project</h4>
+                    <a href="#" target=”_blank” class="btn btn-secondary">View Code</a>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <!-- End Projects Row 2 -->
+    </div>
+    <!--About Me-->
+    <section id="about-me" style="margin-bottom: 15%;">
+        <div class="container">
+            <div class="row text-justify justify-content-center" style="padding-top: 20%;">
+                <div class="col-12 col-md-4">
+
+                    <h2 style="padding-bottom:10%;">About Me</h2>
+                    <p>I am a detail oriented programmer, transitioning from the world of customer service. After 8
+                        years of experience in customer-facing roles, I found myself looking for something both
+                        challenging and rewarding for my future career.</p>
+                    <p>After diving head first in to the accellerated software development program at <b>Eleven Fifty
+                            Academy</b>, I plan to focus my coding skills on improving efficiency and maintaining
+                        quality in all future endeavors.</p>
+
+                    <p><b>My goal as a full stack .Net Developer is to utilize both my technical knowledge and my
+                            interpersonal experience to create beautiful business apps that solve problems.</b></p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="Resources/HeadShotFiller.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Technical SKills -->
+    <div class="modal fade" id="technicalSkillsModal" tabindex="-1" role="dialog"
+        aria-labelledby="technicalSkillsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="technicalSkillsModalLabel" style="font-weight: bold;">Technical Skills
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <ul>
+                            <li>C#</li>
+                            <li>HTML/CSS</li>
+                            <li>.NET Framework</li>
+                            <li>SQL</li>
+                            <li>git/GitHub</li>
+                            <li>BootStrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Soft Skills -->
+    <div class="modal fade" id="softSkillsModal" tabindex="-1" role="dialog" aria-labelledby="softSkillsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="softSkillsModalLabel" style="font-weight: bold;">Soft Skills</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <ul>
+                            <li>Agile Scrum</li>
+                            <li>Written and verbal communication</li>
+                            <li>Analytical skills</li>
+                            <li>Conflict Resolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Values -->
+    <div class="modal fade" id="valuesModal" tabindex="-1" role="dialog" aria-labelledby="valuesModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="valuesModalLabel" style="font-weight: bold;">Values</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <ul>
+                            <li>Creativity</li>
+                            <li>Collaboration</li>
+                            <li>Self-Improvement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Up Next-->
+    <div class="modal fade" id="upNextModal" tabindex="-1" role="dialog" aria-labelledby="upNextModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="upNextModalLabel" style="font-weight: bold;">Up Next</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <p>These are the next challenges I plan to tackle.</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Connect Section-->
+    <div class="container" id="connect">
+        <span class="text-center">
+            <div class="container border-bottom" style="margin-bottom: 10%;">
+
+                <h2>Connect</h2>
+            </div>
+        </span>
+        <!--Resume and Connect row-->
+        <div class="row text-center" style="padding-left: 30%;padding-right: 30%;">
+            <div class="col">
+                <button type="button" class="btn btn-outline-dark" href="#resumeModal" data-toggle="modal"
+                    data-target="#resumeModal">View Resume</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal"
+                    data-target="#connectModal">Contact Me</button>
+            </div>
+        </div>
+
+        <!--Explore Work row-->
+        <div class="row" style="padding-left:33%; padding-right:30%; margin-bottom: 10%; margin-top: 50px;">
+            <p class="col float-left">Explore more of my work</p>
+            <div class="col float-right">
+
+                <a class="col-12 col-xs-4" href="https://www.linkedin.com/in/jenna-hallam-profile" id="linkedInIcon">
+                    <span id="socialIcons">
+                        <i class="fab fa-linkedin" data-toggle="tooltip" data-placement="top" title="My LinkedIn"></i>
+                    </span>
+                </a>
+
+                <a class="col-12 col-xs-4" href="https://github.com/Jhallam31" id="gitHubIcon">
+                    <span id="socialIcons">
+                        <i class="fab fa-github-square" data-toggle="tooltip" data-placement="top"
+                            title="My GitHub"></i>
+                    </span>
+                </a>
+
+                <a class="col-12 col-xs-4" href="https://codepen.io/jhallam31" id="codePenIcon">
+                    <span id="socialIcons">
+                        <i class="fab fa-codepen" data-toggle="tooltip" data-placement="top" title="My CodePen"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom text-center text-light" style=" background-color: #424242; height: 30px;">
+        <p class="text-center">Jenna Hallam Copyright © 2020</p>
+    </footer>
+
+    <!--Resume Modal-->
+    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resumeModalLabel" style="font-weight: bold;">Resume</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <embed src="Resources/Resume.pdf" frameborder="0" width="100%" height="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Resume Modal-->
+
+</body>
+
+</html>
