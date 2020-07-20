@@ -38,9 +38,10 @@
 </head>
 <Script>
     $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </Script>
+
 <body>
     <div id="background">
 
@@ -347,7 +348,7 @@
         <!--End Timeline-->
 
         <!--Begin Connect Section-->
-        <div class="container" id="connect">
+        <div class="container" id="connect" style="margin-top:100px;">
             <span class="text-center">
                 <div class="container border-bottom" style="margin-bottom: 10%;">
 
@@ -357,8 +358,8 @@
             <!--Resume and Connect row-->
             <div class="row text-center" style="padding-left: 30%;padding-right: 30%;">
                 <div class="col-6">
-                    <button type="button" class="btn btn-info" data-toggle="modal"
-                        data-target="#resumeModal">Resume</button>
+                    <a class="btn btn-info" href="Resources/Resume.PDF"
+                                download style="color:white;">Resume</a>
                 </div>
                 <div class="col-6">
                     <button type="button" class="btn btn-info" data-toggle="modal"
@@ -380,13 +381,15 @@
 
                     <a class="col col-4" href="https://github.com/Jhallam31" id="gitHubIcon">
                         <span id="socialIcons">
-                            <i class="fab fa-github-square fa-5x" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                            <i class="fab fa-github-square fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                title="GitHub"></i>
                         </span>
                     </a>
 
                     <a class="col col-4" href="https://codepen.io/jhallam31" id="codePenIcon">
                         <span id="socialIcons">
-                            <i class="fab fa-codepen fa-5x" data-toggle="tooltip" data-placement="bottom" title="CodePen"></i>
+                            <i class="fab fa-codepen fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                title="CodePen"></i>
                         </span>
                     </a>
                 </div>
@@ -527,9 +530,10 @@
                                     <div class="col">
                                         <input type="text" class="form-control text-dark" id="name" placeholder="Name"
                                             name="name" style="background-color: #CECECE;">
+
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control text-dark" placeholder="Your Email"
+                                        <input type="email" class="form-control text-dark" placeholder="Your Email"
                                             name="_replyTo" style="background-color: #CECECE;">
                                     </div>
                                 </div>
@@ -540,48 +544,20 @@
                                             style="background-color: #CECECE;">
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <input type="submit" value="Send" class="btn btn-success">
+                                    
+                                    <button type="button" class="btn btn-secondary" style="background-color: hsl(159, 32%, 9%);"
+                                        data-dismiss="modal">Cancel</button>
+                                </div>
                             </form>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">Send</button>
-                        <button type="button" class="btn btn-secondary" style="background-color: hsl(159, 32%, 9%);"
-                            data-dismiss="modal">Close</button>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <!--End Contact me Modal-->
-
-        <!--Begin Resume Modal-->
-        <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="Resources/Resume.JPG" class="img-fluid img-thumbnail"
-                        style="height:auto;max-width: 100%;">
-                    </div>
-                    <div class="modal-footer">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn btn-secondary" download="Resources/Resume.PDF" style="color:white;">Download</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 
