@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+#skills-row
+{
+    height: 70vh;
+}
+.skills-buttons
+{
+    width: 50%;
+}
+
+#container {
+  
+  
+    font-size:36px;
+    
+    width:100%;
+    bottom:45%;
+    display:block;
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color:whitesmoke;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 7s linear forwards 1;
+  }
+  
+  #flip div div {
+    background:none;
+    color: whitesmoke;
+  }
+  #flip div:first-child div {
+    background:none;
+    color: whitesmoke;
+  }
+  #flip div:last-child div {
+    background:none;
+    color: whitesmoke;
+  }
+  
+  @keyframes show {
+   0% { margin-top: -0px; } to { margin-top: -90px; } 
+   40%  { margin-top: -90px; } to { margin-top: -180px; }
+   65%  { margin-top: -180px; } to { margin-top: -270px; }
+  }
+  .navbar{
+      background-color: rgb(20, 20, 20);
+  }
+  #socialIcons{
+    font-size: 25px; 
+    color: lightgrey;
+  }
+
+#socialIcons:hover{
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  #cardContainer:hover #overlay {
+    opacity: 1;
+  }
+  
+  #text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  

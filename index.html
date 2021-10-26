@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenna Hallam, Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/5f8951e26e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark mb-4 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jenna Hallam</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects-grid">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#connect">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="px-4 py-5 my-5 text-center" id="home">
+        <img
+          class="d-block mx-auto mb-4 rounded-circle"
+          src="Resources\HeadShot.jpg"
+          alt=""
+          height="15%"
+          width="15%"
+        />
+        <div id="container">
+          <div id="flip">
+            <div><div>Developer</div></div>
+            <div><div>Instructor</div></div>
+            <div><div>Problem Solver</div></div>
+            <div><div>Jenna Hallam</div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Welcome! I'm an Indiana-native developer with a specialization in
+            ASP.NET and Salesforce development. I currently teach a Software
+            Development class at Eleven Fifty Academy. Check out my projects and
+            information below to find out some more about me.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
+        </div>
+      </div>
+
+      <!--Begin Skills Section With Buttons-->
+      <section id="skills">
+
+      
+      <div class="container pt-5">
+        <h2 class="text-center">SKILLS</h2>
+        <div class="container" id="skills-row">
+          <div class="row h-100 text-center">
+            <div class="col my-auto ms-auto">
+              <button class="btn btn-lg btn-outline-light skills-buttons"data-bs-toggle="collapse" href="#collapseTech" role="button" aria-expanded="false" aria-controls="collapseTech">
+                Technical
+              </button>
+              <div class="collapse container mt-5" id="collapseTech">
+                <ul>
+                  <li>C#</li>
+                  <li>Html/CSS</li>
+                  <li>Apex</li>
+                  <li>Visualforce</li>
+                  <li>OOP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col my-auto ms-auto">
+              <button class="btn btn-lg btn-outline-light skills-buttons"  data-bs-toggle="collapse" href="#collapseOther" role="button" aria-expanded="false" aria-controls="collapseOther">
+                Other
+              </button>
+              <div class="collapse container mt-5" id="collapseOther">
+                <ul>
+                  <li>Agile/Scrum</li>
+                  <li>Problem Solving</li>
+                  <li>Self-Motivated</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col my-auto ms-auto">
+              <button class="btn btn-lg btn-outline-light skills-buttons"   data-bs-toggle="collapse" href="#collapseNext" role="button" aria-expanded="false" aria-controls="collapseNext">
+                Next Steps
+              </button>
+              <div class="collapse container mt-5" id="collapseNext">
+                <ul>
+                  <li>Platform Developer 1 Certification</li>
+                  <li>Solidity</li>
+                  <li>React</li>
+                  
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--End Skills Section-->
+
+      <!--Begin Modals for Skills-->
+      <div
+        class="modal"
+        tabindex="-1"
+        id="technicalModal"
+        aria-labelledby="technicalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="technicalLabel">
+                Technical Skills
+              </h5>
+              <button
+                type="button"
+                class="btn btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!--End Modals-->
+<!--Projects Begin-->
+<div class="container" id="projects-grid" style="padding-bottom: 80px;">
+  <div class="row">
+      <div class="col-sm-12 text-center border-bottom" style="margin-bottom: 100px;">
+          <h2>PROJECTS</h2>
+      </div>
+  </div>
+  <!-- Projects Row 1 -->
+  <div class="row">
+
+      <!-- Card Begin-->
+      <div class="col-12 col-md-4">
+          <!-- Card image -->
+          <div class="card">
+              <div class="container" id="cardContainer">
+                  <img class="card-img-top" src="Resources/QuickNote.JPG" alt="Card image cap">
+                  <div id="overlay">
+                      <div id="text">An n-tier MVC application. Built using C# Entity Framework.</div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-body text-center">
+              <!-- Title -->
+              <h4 class="card-title text-center">Quick-Note</h4>
+              <a href="https://github.com/Jhallam31/QuickNote" target=”_blank”
+                  class="btn btn-secondary">View
+              </a>
+          </div>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card Begin-->
+      <div class="col-12 col-md-4">
+        <!-- Card image -->
+        <div class="card">
+            <div class="container" id="cardContainer">
+                <img class="card-img-top" src="Resources/VocabHero.jfif" alt="Card image cap">
+                <div id="overlay">
+                    <div id="text">A full-stack web MVC that utilizes n-tier architecture </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <!-- Title -->
+            <h4 class="card-title text-center">Vocab Hero</h4>
+            <a href="https://github.com/Jhallam31/VocabHero" target=”_blank”
+                class="btn btn-secondary">View</a>
+        </div>
+    </div>
+      
+      <!-- End Card -->
+
+      <!-- Card Begin -->
+      <div class="col-12 col-md-4">
+          <div class="card">
+              <div class="container" id="cardContainer">
+                  <img class="card-img-top" src="Resources/GoldBadgeThumbnail.jfif" alt="Card image cap">
+                  <div id="overlay">
+                      <div id="text">C# Repository Pattern Console Applications</div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-body text-center">
+              <!-- Title -->
+              <h4 class="card-title text-center">Business Console Apps</h4>
+              <a href="https://github.com/Jhallam31/Gold-badge-challenges" target=”_blank”
+                  class="btn btn-secondary">View</a>
+          </div>
+      </div>
+      <!-- End Card-->
+
+  </div>
+  <!-- End Projects Row 1 -->
+
+
+  <!-- Projects Row 2 -->
+  <div class="row">
+      <!-- Card Begin-->
+      <div class="col-12 col-md-4">
+          <!-- Card image -->
+          <div class="card">
+              <div class="container" id="cardContainer">
+                  <img class="card-img-top" src="Resources/StaticStoreFrontThumbnail.jfif"
+                      alt="Card image cap">
+                  <div id="overlay">
+                      <div id="text">A static store landing page styled with Html/CSS</div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-body text-center">
+              <!-- Title -->
+              <h4 class="card-title text-center">Store Front Page</h4>
+              <a href="https://github.com/Jhallam31/Static-storefront" target=”_blank”
+                  class="btn btn-secondary">View</a>
+          </div>
+      </div>
+      <!-- End Card -->
+
+      <!-- Card Begin-->
+      <div class="col-12 col-md-4">
+          <!-- Card image -->
+          <div class="card">
+              <div class="container" id="cardContainer">
+                  <img class="card-img-top" src="Resources/RegisterPageThumbnail.jfif" alt="Card image cap">
+                  <div id="overlay">
+                      <div id="text">A simple registration page styled with html/CSS and Bootstrap 4 </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-body text-center">
+              <!-- Title -->
+              <h4 class="card-title text-center"> Static Register Page</h4>
+              <a href="https://jhallam31.github.io/registerpage/" target=”_blank”
+                  class="btn btn-secondary">View
+              </a>
+          </div>
+      </div>
+      <!-- End Card -->
+<!--Begin Card-->
+      <div class="col-12 col-md-4">
+        <!-- Card image -->
+        <div class="card">
+            <div class="container" id="cardContainer">
+                <img class="card-img-top" src="https://raw.githubusercontent.com/Jhallam31/Portfolio/master/Resources/CSSCreature2.JPG" alt="Card image cap">
+                <div id="overlay">
+                    <div id="text">An animated creature created using CSS styles and borders</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <!-- Title -->
+            <h4 class="card-title text-center" stylr="font-size: 1vw">CSS Creature 2</h4>
+            <a href="https://codepen.io/jhallam31/pen/OJyYWaZ" target=”_blank”
+                class="btn btn-secondary">View
+            </a>
+        </div>
+    </div>
+  </div>
+  <!-- End Projects Row 2 -->
+
+</div>
+<!--End Projects Section-->
+      <!--About me-->
+      
+      <section id="about-me" style="margin-bottom: 15%">
+        <div class="container">
+          <div class="row text-center" style="padding-top: 20%">
+            <div class="col col-12">
+              <h2>ABOUT</h2>
+            </div>
+          </div>
+          <div
+            class="row text-justify justify-content-center"
+            style="padding-top: 10%"
+          >
+            <div class="col-12 col-md-4">
+              <p>
+                I'm currently an instuctor for Eleven Fifty Academy's software
+                development program, but my roots are based in customer-facing
+                positions. After years of working in these roles, I found myself
+                looking for something both challenging and rewarding for my
+                future.
+              </p>
+              <p>
+                After discovering my passion for development, I was accepted
+                into the <b>Salesforce Pathfinder Program</b>. I have since
+                added Apex programming, Visualforce, and several other Salesforce
+                fundamentals to my repetoire.
+              </p>
+              <p>
+                <b> My goal as a full stack Developer is to utilize both my
+                  technical knowledge and my instruction experience to create (and collaborate on)
+                  beautiful business apps. </b>
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="Resources/HeadShot.jpg" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End About Me-->
+      <!--Begin Connect Section-->
+      <div class="container" id="connect" style="margin-top:100px;">
+        <span class="text-center">
+            <div class="container border-bottom" style="margin-bottom: 10%;">
+
+                <h2>CONNECT</h2>
+            </div>
+        </span>
+        <!--Resume and Connect row-->
+        <div class="row text-center" style="padding-left: 30%;padding-right: 30%;">
+          <p class="text-center "> Thanks for checking out my page, if you have more questions and/or would like to set up a time to connect, you can download a copy of my resume below and contact me directly as well!</p>
+
+            <div class="col mt-5">
+                <a class="btn btn-light text-dark" href="Resources/ResumeJH.pdf"
+                            download style="color:white;">Resume</a>
+            </div>
+            <div class="col mt-5">
+                <button type="button" class="btn btn-light text-dark" data-toggle="modal"
+                    data-target="#connectModal">Contact</button>
+            </div>
+        </div>
+
+        <!--Explore Work rows-->
+        <div class="row text-center"
+            style="padding-left:30%; padding-right:30%; margin-bottom: 200px; margin-top: 50px;">
+            <div class="col text-center">
+
+                <a class="col col-4" href="https://www.linkedin.com/in/jenna-hallam/" id="linkedInIcon">
+                    <span id="socialIcons">
+                        <i class="fab fa-linkedin fa-5x" data-toggle="tooltip" data-placement="bottom"
+                            title="LinkedIn"></i>
+                    </span>
+                </a>
+
+                <a class="col col-4" href="https://github.com/Jhallam31" id="gitHubIcon">
+                    <span id="socialIcons">
+                        <i class="fab fa-github-square fa-5x" data-toggle="tooltip" data-placement="bottom"
+                            title="GitHub"></i>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!--End Connect Section-->
+<!--Contact Me Modal-->
+<div class="modal fade" id="connectModal" tabindex="-1" role="dialog" aria-labelledby="connectModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content"
+        style="background-color: #3b403e; color: #d4d9d7; text-shadow: lightgray, 1px;">
+        <div class="modal-header">
+            <h5 class="modal-title" id="connectModalLabel">Contact Jenna</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <form action="https://formspree.io/mvowzdyj" method="POST">
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col">
+                            <input type="text" class="form-control text-dark" id="name" placeholder="Name"
+                                name="name" style="background-color: #CECECE;">
+
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control text-dark" placeholder="Your Email"
+                                name="_replyTo" style="background-color: #CECECE;">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 200px; margin-top: 10px;">
+                        <div class="col">
+                            <input type="text-area" class="form-control text-dark h-100"
+                                placeholder="Your Message" name="message"
+                                style="background-color: #CECECE;">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Send" class="btn btn-success">
+                        
+                        <button type="button" class="btn btn-secondary" style="background-color: hsl(159, 32%, 9%);"
+                            data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+<!--End Contact me Modal-->
+    <!--Begin Footer-->
+    <footer class="fixed-bottom text-center text-light" style=" background-color: #424242; height: 30px;">
+        <p class="text-center">Jenna Hallam 2021</p>
+    </footer>
+    <!--End Footer-->
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
